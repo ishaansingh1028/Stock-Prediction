@@ -2,7 +2,7 @@
 DESCRIPTION <br />
 This application is a web based stock prediction dashboard. When a stock tag and time span for hisorical data to predict on is entered, the application displays the general information of the company, the historical stock data, the graphical stock trends, the forecast results in a tablular format, and the forcast results in a graphical format. 
 
-PACKAGES
+PACKAGES <br />
 The packages involved in this project are: <br />
 -> pandas: For dataframes and to format and clean data for graphs <br />
 -> streamlit: The user interface for the application which is a web dashboard <br />
