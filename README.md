@@ -13,6 +13,8 @@ The packages involved in this project are: <br />
 -> plotly: For graphing the data <br />
 -> fbprophet: To run the algorithms to predict and forecast the futue stock prices <br />
 
+Version 2 involving real time forecasting and sentiment analysis coming soon! <br />
+
 !!!This application is not meant to be an accurate indication of stock prices!!! It is just a fun and insightful project!
 
 
