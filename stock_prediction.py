@@ -7,6 +7,7 @@ from bs4 import BeautifulSoup
 import datetime
 import plotly.express as px
 from fbprophet.plot import plot_plotly
+from fbprophet import Prophet
 
 #Method to Scrape Wikepedia and the results are stored "@st.cache" so that we do not have to scrape everytime a change is made
 @st.cache
@@ -86,7 +87,7 @@ try:
         fig1 = plot_plotly(m,forecast)
         st.plotly_chart(fig1)
 
-        st.write('Forecast Components")
+        st.write("Forecast Components")
         fig2 = m.plot_componenets(forecast)
         st.write(fig2)
         
