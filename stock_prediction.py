@@ -6,6 +6,7 @@ import requests
 from bs4 import BeautifulSoup
 import datetime
 import plotly.express as px
+from fbprophet.plot import plot_plotly
 
 #Method to Scrape Wikepedia and the results are stored "@st.cache" so that we do not have to scrape everytime a change is made
 @st.cache
@@ -72,7 +73,7 @@ try:
         df_train = df_train.reset_index(inplace=False)
         df_train = df_train.rename(columns={'Date':'ds','Close':'y'})
 
-        """
+        
         #Prediction
         st.header("Prediction")
         m = Prophet()
@@ -88,17 +89,10 @@ try:
         st.write('Forecast Components")
         fig2 = m.plot_componenets(forecast)
         st.write(fig2)
-        """
+        
 except:
     st.sidebar.markdown("**Invalid tag input!**")
 
-#df_train = stock_data[['Date','Close']]
-
-
-
-
-
-#def plot_initial_data():
 
 
 
